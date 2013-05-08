@@ -1,12 +1,12 @@
-sbtPlugin		:= true
+sbtPlugin       := true
 
-name			:= "xsbt-reflect"
+name            := "sbt-reflect"
 
-organization	:= "de.djini"
+organization    := "com.github.dragisak"
 
-version			:= "0.0.3"
+version         := "1.0.0"
 
-scalaVersion	:= "2.9.1"
+scalaVersion    := "2.9.2"
 
 //publishArtifact in (Compile, packageBin)	:= false
 
