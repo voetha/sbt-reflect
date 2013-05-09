@@ -15,3 +15,7 @@ publishArtifact in (Compile, packageDoc)	:= false
 publishArtifact in (Compile, packageSrc)	:= false
 
 scalacOptions	++= Seq("-deprecation", "-unchecked")
+
+credentials += Credentials(Path.userHome / ".artifactory" / ".credentials" )
+
+publishTo := Some("TFly Scala Release" at "http://build.ticketfly.com/artifactory/libs-scala-release-local")
