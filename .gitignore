@@ -3,3 +3,4 @@ project/boot/
 project/plugins/project/
 
 /build/
+atlassian-ide-plugin.xml
