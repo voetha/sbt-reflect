@@ -11,6 +11,9 @@ Build and publish the plugin:
     sbt publish-local
     
 Add the plugin to your project in project/plugins/build.sbt:
+	addSbtPlugin("com.github.dragisak" % "sbt-reflect" % "1.1.0")
+
+For sbt 0.12.x, add the plugin to your project in project/plugins/build.sbt:
 	addSbtPlugin("com.github.dragisak" % "sbt-reflect" % "1.0.0")
     
 Include the plugin in you project's build.sbt:

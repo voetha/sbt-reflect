@@ -4,9 +4,9 @@ name            := "sbt-reflect"
 
 organization    := "com.github.dragisak"
 
-version         := "1.0.0"
+version         := "1.1.0"
 
-scalaVersion    := "2.9.2"
+scalaVersion    := "2.10.3"
 
 //publishArtifact in (Compile, packageBin)	:= false
 
