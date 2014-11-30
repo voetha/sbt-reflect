@@ -1,4 +1,5 @@
 import sbt._
+import java.util.Date
 
 /**
 usage
@@ -25,9 +26,12 @@ object ReflectPlugin extends Plugin {
 							if (reflectPackage.nonEmpty)	"package " + reflectPackage + "\n"
 							else							""
 						) +
+						"import java.util.Date\n" +
+						"\n" + 
 						"object " + reflectClass + " {\n" + 
 						"\tval name\t= \"" + name + "\"\n" + 
 						"\tval version\t= \"" + version + "\"\n" + 
+						"\tval compileDate\t= new Date(" + (new Date().getTime) + "l)\n" + 
 						"}\n"  
 				IO write (file, code)
 				Seq(file)
